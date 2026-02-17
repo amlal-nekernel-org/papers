@@ -1,0 +1,50 @@
+% AUTHOR: Amlal El Mahrouss
+% PURPOSE: DN001.08: Notes for Several Formulas.
+
+\documentclass[11pt, a4paper]{article}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{mathtools}
+\usepackage[margin=0.5in,top=1in,bottom=1in]{geometry}
+
+\title{Notes for Several Formulas.}
+\author{Amlal El Mahrouss\\\texttt{amlal@nekernel.org}}
+\date{February 17, 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+	\rule[0.01cm]{17cm}{0.01cm}
+\end{center}
+
+\begin{abstract}
+\begin{center}
+    The paper covers several formulas that I've written down today.
+\end{center}
+\end{abstract}
+
+\section{DEFINITIONS}
+
+\subsection{DEFINITION OF A SUM OF $x \in \mathbb{R}$}
+We define:
+\begin{equation}
+    S(x) \coloneqq \sum_{k=1}^{e}\frac{k \log(x)}{e}\cdot ke, \quad \int_{a}^{b}S(t)dt
+\end{equation}
+Where $\forall x \in \mathbb{R}, x > 1$.
+
+\subsection{DEFINITION OF A SUM OF $(x \cdot e), \quad ((x+1)\cdot e) \in \mathbb{R}$}
+We define:
+\begin{equation}
+    W(x) \coloneqq S(x \cdot e)\cdot S((x+1)\cdot e) +C, \quad \forall C \in \mathbb{Z}, \quad C > 0
+\end{equation}
+Where $\forall x \in \mathbb{R}, x > 0$.
+
+\end{document}
+
+
+
