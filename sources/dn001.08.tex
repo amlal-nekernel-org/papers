@@ -1,0 +1,57 @@
+% AUTHOR: Amlal El Mahrouss
+% PURPOSE: DN001.08: Notes for Several Formulas.
+
+\documentclass[11pt, a4paper]{article}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{mathtools}
+\usepackage[margin=0.5in,top=1in,bottom=1in]{geometry}
+
+\title{Notes for Several Formulas.}
+\author{Amlal El Mahrouss\\\texttt{amlal@nekernel.org}}
+\date{February 19, 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+	\rule[0.01cm]{17cm}{0.01cm}
+\end{center}
+
+\begin{abstract}
+\begin{center}
+    The paper covers several formulas that I've written down today.
+\end{center}
+\end{abstract}
+
+\section{DEFINITIONS}
+
+We assume these definitions are valid within their conditions:
+
+\subsection{DEFINITION OF $L(t) \in \mathbb{R}$}
+We define:
+\begin{equation}
+    L(u, b, a) \coloneqq \int_{a}^{b}X(u, n)\cdot du, \quad n = b - a, \quad, \quad X(t, p) \coloneqq \sum_{k=1}^{p}\frac{t}{p}\cdot kt, \quad p \geq 1
+\end{equation}
+Where $\forall t \in \mathbb{R}, t > 1$.
+
+\subsection{DEFINITION OF $W(t, a, b) \in \mathbb{R}$}
+We define:
+\begin{equation}
+    W(t, a, b) \coloneqq L(t \cdot e, a, b)\cdot(\sum_{k=1}^{n} L((t+k)\cdot e, a, b)) +C_{rem}, \quad \forall C_{rem} \in \mathbb{R}, \quad C > 0
+\end{equation}
+Where $\forall t \in \mathbb{R}, t > 0$ and $C_{rem}$ is a remainder constant.
+
+\subsection{DEFINITION OF $N_{sum}(t, a, b) \in \mathbb{R}$}
+
+We define:
+\begin{equation}
+    N_{sum}(t, a, b) \coloneqq \sqrt{L(t, a, b)^2_{n}} \quad \forall t \in \mathbb{R}
+\end{equation}
+If and only if $t > 1, \quad n_{min} < n < n_{max}, \quad n_{min} > 0$.
+
+\end{document}
