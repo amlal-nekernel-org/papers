@@ -155,29 +155,23 @@
 The note presents lemmas and theorems that may be suited for further research. 
 
 \section{Introduction and Preliminaries}
-Defining $t$ as $C(t)$, we can consider a space of $S_{n}(C(t), p)$ for $n > 1, \space n \in \mathbb{N}$ and $p \in \mathbb{R}$.
+Defining $t$ as $C(t)$, we can consider a space of $\mathbb{S}(C(t), p)$ for $n > 1, \space n \in \mathbb{N}$ and $p \in \mathbb{R}$.
 
-\section{On Lemmas and Theorems}
-\begin{lemma}
-If $C(t) > 0$, there exists a value of $t$ such that $t \in \mathbb{S_n}$.
-\end{lemma}
-\begin{lemma}
-There exists a value of $C(t)$ such that $C(t) \in \mathbb{S_n}$.
-\end{lemma}
-
+\section{On Theorems}
 \begin{theorem}
   There exists:
   \begin{equation}
-    S_{n}(C(t), p) = i^{p}
+    \mathbb{S}(C(t), p) = i^{p}
   \end{equation}
-  For $p$ being a positive integer reaching $p$.
+  For $p$ being a positive integer reaching $\lim{\mathbb{S}(C(t), p)}$.
 \end{theorem}
 
 \begin{theorem}
   There exists an integral solution of:
   \begin{equation}
-    \int \frac{\log\left(\left|\sum_{n=1}^{\pi} \frac{1}{n^s}\right|\right)}{\sum_{n=1}^{\pi} \frac{1}{n^s}} \, d \sum _{n=1}^{\pi }\:\frac{1}{n^s}
+    \int \frac{\log_{10}\left(\left|\sum_{n=1}^{\pi} \frac{1}{n^s}\right|\right)}{\sum_{n=1}^{\pi} \frac{1}{n^s}}
   \end{equation}
+  that is within $e$ and $\pi$ in $\mathbb{R}$.
 \end{theorem}
 
 \begin{theorem}
@@ -185,19 +179,18 @@ There exists a value of $C(t)$ such that $C(t) \in \mathbb{S_n}$.
   \begin{equation}
     \pi > \sum_{n=1}^{\pi} \frac{1}{n^s} > \lim_{n \to \infty} \frac{1}{n^s}
   \end{equation}
-  For $s \in \mathbb{R}$. And $\lim_{n \to \infty} \frac{1}{n^s}$ shall yield for $s > 1.39425$.
+  when $s \in \mathbb{R}$. And $\lim_{n \to \infty} \frac{1}{n^s}$ shall yield for $s > 1.39425$.
 \end{theorem}
 
 \begin{theorem}
   There exists for a definite integral that can be represented in the form of:
   \begin{equation}
-    \int \sum_{n=1}^{\pi} \frac {1}{n^s} ds = \pi \frac{1-2^{-\pi}}{\log(2)}+\frac{1-3^{-\pi}}{\log(3)}
+    \int \sum_{n=1}^{\pi} \frac {1}{n^s} dt \approx \pi \frac{(k-p)^{-\pi}}{\log(k-p)}+\frac{(k-p)^{-\pi}}{\log(k-p)}+C
   \end{equation}
 \end{theorem}
 
-\section{Conclusions and Remarks}
-The note has presented several lemmas and theorems that may be useful for further research in the field of mathematical analysis and number theory. Future work may involve exploring the implications of these results and their applications in various domains.
-
+\section{Remarks}
+The note has presented several theorems that may be useful for further research in the field of mathematical analysis and number theory.
 \nocite{*}
 
 \bibliographystyle{acm}

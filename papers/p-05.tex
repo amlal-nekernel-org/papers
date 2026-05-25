@@ -142,44 +142,36 @@
 The note covers several formulas that have been written down for reusability purposes.
 
 \section{Introduction and Preliminaries}
-Assuming $n > 0$, $p > 0$:
 \begin{theorem}
-There exists for $C(n, p)$:
+There exists for $C(k)$:
 \begin{equation}
-C(n, p) \coloneq \sum_{k=1}^{n} \sum_{d=1}^{p} I_{1} (k \cdot d) \in \mathbb{R}
+C(k) \approx \sum_{p=1}^{n} \mathbb{I} (k \cdot p)
 \end{equation}
 Where $p > S(x) > n$. If and only if $x \geq 0$. Where $S(x)$ exists in $C(n ,p)$.
 \end{theorem}
 
 \section{On Theorems}
 \begin{theorem}
-There exists for $I_{1}(t)$:
+There exists for $\mathbb{I}(t)$:
 \begin{equation}
-I_{1}(t) \coloneq \int_{C}^{\infty} \frac{|Log(t \cdot z)|}{t}dz, \quad \forall z \in \mathbb{R}, \quad t > 0
+\mathbb{I}(t) = \int \frac{\mathbb{T}(t \cdot s)}{x^s}dx
 \end{equation}
 s.t. as an illustration, we can define $t$ as:
 \begin{equation}
-t(s)=\sum_{n=1}^{l} \frac{1}{n^{s}}
+\mathbb{T}(s)=\sum_{n=1}^{\mathbb{L}} \frac{1}{n^{s}}
 \end{equation}
-Where $l$ is a positive integer approaching $\infty$, $z$ is constant equal to 1 and $Log$ is the Principal Complex Logarithm of: $t \cdot z$, and $z \in \mathbb{C}$.
-\end{theorem}
-
-Stating the following theorems per [1.1], and [1.2] definitions:
-
-\begin{lemma}
-There exists $x \in \mathbb{R}$, there exists a value of $t$ such that $t \in \mathbb{C}$.
-\end{lemma}
-
+Where $\mathbb{L}$ is a positive integer approaching $\pi$, $z$ is a limit approaching of a real approaching $\pi$ and $Log$ is the Principal Complex Logarithm of: $t \cdot z$, and $z \in \mathbb{C}$.
+\end{theorem} {Per [1.1], and [1.2]:}
 \begin{theorem}
-$C(n, p) \in \mathbb{R}$ is a real number for all $n, p \in \mathbb{N}$ such that $p > S(x) > n$ and $x \geq 0$.
+$C(k) \in \mathbb{R}$ is a real number for all $n, p \in \mathbb{N}$ such that $p > S(x) > n$ and $x \geq 0$.
 \end{theorem}
 \begin{theorem}
-$I_{1}(t) \in \mathbb{C}$ is a complex number for all $t > 0$ and $t \in \mathbb{C}$.
+$\mathbb{I}(t) \in \mathbb{R}$ is a real number for all $t > 0$ and $t \in \mathbb{R}$.
 \end{theorem}
 
-\section{Conclusions and Remarks}
+\section{Remarks}
 
-The goal of this note was to establish the definitions of $C(n, p)$ and $I_{1}(t)$, and to state the theorems that follow from these definitions. The properties of these functions can be further explored in future work.
+The goal of this note was to establish the definitions of $C(k)$ and $\mathbb{I}(t)$, and to state the theorems that follow from these definitions. The properties of these functions can be further explored in future work.
 
 \nocite{*}
 
