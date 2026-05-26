@@ -5,6 +5,7 @@
 \usepackage{amsfonts}
 \usepackage{textcomp}
 \usepackage{amsthm}
+\usepackage{mathtools}
 
 \theoremstyle{plain}
 \newtheorem{theorem}{Theorem}[section]
@@ -29,13 +30,13 @@
 \section{Theorems}
 
 \begin{theorem}
-There exists in $\mathbb{R}$:
+Let $A(n, p) \in \mathbb{R}$:
 \begin{equation}
-    A=\sum_{n}^{p} ((n \cdot p)!) < L
+    A(n, p) \coloneq \sum_{n}^{p} M(n \cdot p) < L
 \end{equation}
-with the following solution:
+if conditions are met, $A(n, p)$ may hold for:
 \begin{equation}
-    A = p! + \text{ } (n+1p)! + \text{ } (n+2p)! + \text{ } \dots \text{ }+ (n+Lp)! 
+    A(n, p) \implies p! + \text{ } (n+1p)! + \text{ } (n+2p)! + \text{ } \dots \text{ } + (n+Lp)! 
 \end{equation}
 where $L$ designates the highest defined number for $A$.
 \end{theorem}
