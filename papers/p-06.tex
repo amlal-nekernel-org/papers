@@ -141,17 +141,31 @@
 \section{Theorems}
 
 \begin{theorem}
-  Let $pw(\lambda, \omega, i) \in \mathbb{R}$, for $\omega > 0$, $x > 0$, per [1.1], the following:
+  Let $pw(n, p, a) \in \mathbb{R}$, for $p > 0$, $x > 0$, per [1.1], the following:
   \begin{equation}
-    pw(\lambda, \omega, i) = \oint (\frac{i \lambda}{\omega}) \space ds = i(\frac{s \lambda}{\omega}) + C
+    pw(n, p, a) = \int (\frac{a(n)}{p})
   \end{equation}
-  holds if and only if: $pw(\lambda, \omega, i) \in \mathbb{R}$.
+  holds for: $pw(n, p, a) \in \mathbb{R}$, which evaluates to:
+  \begin{equation}
+    PW(n, p, a) = \frac{n}{p}\cdot \frac{a^2}{2}+C
+  \end{equation}
 \end{theorem}
 
 \begin{theorem}
-  Let $\frac{d}{d\space pw(\lambda, \omega, i) } = v_{n}, \quad v_{n} \in \mathbb{R}$, where $ pw(\lambda, \omega, i) $ is rational. Thus:
+  Let $\frac{dy}{dx}pw(n, p, a) = v_{n}; \quad v_{n} \in \mathbb{R}$, where $ pw(n, p, a) $ is a rational number. Thus:
   \begin{equation}
-    pw(\lambda, \omega, i) \in \mathbb{R}
+    v_{n} \in \mathbb{R}; \quad v_{n}\neq 0
+  \end{equation}
+\end{theorem}
+
+\begin{theorem}
+  There exists  in $\mathbb{R}$ the following equality:
+  \begin{equation}
+    c \cdot p \coloneq \frac{p!}{\ln \left(p\right)!}
+  \end{equation}
+  The euquation then becomes:
+  \begin{equation}
+    c \coloneq \frac{p!}{p \cdot \ln \left(p\right)!}; \quad p \neq 0
   \end{equation}
 \end{theorem}
 
