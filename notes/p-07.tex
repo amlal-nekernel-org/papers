@@ -141,7 +141,7 @@
 \section{Equations \& Theorems}
 
 \begin{theorem}
-Suppose
+For
 \begin{equation}
     \frac{\log(|K|)}{K} d(K); \quad K \neq 0; \quad K=\sum_{n=1}^{\pi} \frac{1}{n^s}
 \end{equation}
@@ -152,7 +152,7 @@ If $K \neq 0$. Then $K$ admits a number of solutions $n$ in $\mathbb{R}$. Then
 \end{theorem}
 
 \begin{theorem}
-Suppose
+For
 \begin{equation}
   \iint f'(x) dx \pm C = s
 \end{equation}
@@ -166,31 +166,49 @@ If and only If. $\pm C \neq 0$. Then $\lim_{x\to \infty}{\pm C}$ admits a soluti
 \end{equation}
 \end{theorem}
 
+\begin{theorem}
+There exists
 \begin{equation}
-  \Delta x = \pm C = \frac{s}{-(\iint f'(x) dx)}
+\Delta x = \pm C = \frac{s}{-(\iint f'(x) dx)}
 \end{equation}
-Thus. By moving $\pm C$ on the left side.
+Thus. Moving $\pm C$ so that 
 \begin{equation}
-  \Delta x + \frac{s}{-(\iint f'(x) dx)} = 0
+  \Delta x + \frac{s}{-(\iint f'(x) dx)}
 \end{equation}
+\end{theorem}
 
-\begin{proof}
-Assume for $x=\pi$.
+\begin{theorem}
+If $x=\pi$. Then
 \begin{equation}
-  \Delta \pi + \frac{s}{-(\iint f'(\pi) d\pi)} = 0
+  \Delta \pi + \frac{s}{-(\iint f'(\pi) d\pi)} = C
 \end{equation}
-Becomes by multipying $\pi$ on both sides.
+We choose to multipy $\pi$ on both sides so that
 \begin{equation}
-  \Delta + \frac{s}{-(\iint f'(\pi) d\pi)} = 0
+  \Delta + \frac{s}{-(\iint f'(\pi) d\pi)} = C
 \end{equation}
-Which then becomes
+Thus
 \begin{equation}
-  \frac{s}{-(\iint f'(\pi) d\pi)} = -\Delta
+  \frac{s}{-(\iint f'(\pi) d\pi)} = -\Delta C
 \end{equation}
-Which then $\frac{s}{-(\iint f'(\pi) d\pi)}$ becomes equal to
+Then
 \begin{equation}
-  -(\iint f'(\pi) d\pi) = \frac{-\Delta}{s}
+  -(\iint f'(\pi) d\pi) = \frac{-\Delta}{s} C
 \end{equation}
-\end{proof}
+\end{theorem}
+
+\begin{theorem}
+We have identically
+\begin{equation}
+  z = -\frac{\Delta}{\pm s}; \quad z \neq 0
+\end{equation}
+If and only If
+\begin{equation}
+  x \neq 0; \quad x \in \mathbb{R}
+\end{equation}
+Then. There is an identity of $x$ such that
+\begin{equation}
+  -\frac{\Delta}{\pm s}x; \quad x \neq 0
+\end{equation}
+\end{theorem}
 
 \end{document}
