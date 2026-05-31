@@ -140,16 +140,29 @@
 }]
 
 \section{Equations \& Theorems}
+
+\begin{definition}
+	\begin{align*}
+		\pm B &= \frac{d}{dx} \frac{x}{n-\ln (p!)+x}\\
+		0 &= \frac{d}{dx} \frac{x}{n-\ln (p!)+x} - B
+	\end{align*}
+\end{definition}
+
 \begin{theorem}
-Let $\rho(n, p, s, x) \in \mathbb{R}$:
-\begin{equation}
-\rho(n, p, s, x) \coloneq \frac{\int (\frac{p}{n^{s}}) \text{ } dx}{\frac{p}{n^{s}}! }
-\end{equation}
+Assume $\rho(n, p, s, x) \in \mathbb{R}$:
+\begin{align*}
+\pm C + \rho(n, p, s, x) &= \frac{\int (\frac{p}{n^{s}}) \text{ } dx}{\frac{p}{n^{s}}! }\\
+\pm C &= \frac{ \frac{\int (\frac{p}{n^{s}}) \text{ } dx}{\frac{p}{n^{s}}! } }{\rho(n, p, s, x)}
+\end{align*}
 For $x = \pi$:
 \begin{equation}
-  \lim_{x \to \pi} \rho(n, p, s, x) \to \frac{x p\pm Cn^s}{n^s\frac{p}{n^s}!}
+  \lim_{x \to \pi} \rho(n, p, s, x) \to K; \quad K = \pm \frac{x p\pm Cn^s}{n^s\frac{p}{n^s}!}
 \end{equation}
-If and only if $x > 0$. And $\lim x \to \pi$.
+If $x > 0$. And $\lim x \to \pi$. Therefore:
+\begin{align*}
+	\pm K \pm C &= \pm Z\\
+	\pm K &= \frac{\pm Z}{\pm C}
+\end{align*}
 \end{theorem}
 
 \nocite{*}
