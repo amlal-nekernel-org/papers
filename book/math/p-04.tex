@@ -162,7 +162,8 @@
 	Let the following based on $E(x)$:
 	\begin{align*}
 		P' &= \prod_{n=1}^{3}\rho(x) x^{n} + \int E(x) dx;\\
-		P' &= \prod_{n=1}^{3}\rho(x) x^{n} + \int \frac{\gamma(x)}{\delta(x) + \lambda(x)} dx; \quad P(s) \neq 0.
+		P' &= \prod_{n=1}^{3}\rho(x) x^{n} + \int \frac{\gamma(x)}{\delta(x) + \lambda(x)} dx; \quad P(s) \neq 0;\\
+		P' &= \int \frac{\gamma(x)}{\delta(x) + \lambda(x)} dx + x^{n} \rho(x)^{3}.
 	\end{align*}
 \end{definition}
 
@@ -180,9 +181,9 @@
 \begin{definition}
 	Let the following:
 	\begin{align*}
-		&= \frac{\gamma(x)}{\delta(x)};\\
-	 	\lambda(x) &=  \lambda(x) \frac{\gamma(x)}{\delta(x)};\\
-	 	L' &= \lambda(x) \frac{\gamma(x)}{\delta(x)} - \lambda(x); \quad \delta(x) \neq 0.
+		L' + \lambda(x)^{2} &= \frac{\gamma(x)}{\delta(x)};\\
+	 	L' + \lambda(x) &= \frac{\gamma(x)}{\delta(x)  \lambda(x) };\\
+	 	L' &= \frac{\gamma(x)}{\delta(x)  \lambda(x) } - \lambda(x); \quad \delta(x)\lambda(x) \neq 0.
 	\end{align*}
 \end{definition}
 
@@ -201,6 +202,25 @@
 		I' &= - r + ( \frac{\ln x}{\Delta n} + \frac{\Delta n}{\ln x})^m; \quad r \neq 0; \quad r \in \mathbb{R}{+};
 	\end{align*}
 \end{definition}
+
+\begin{definition}
+	For all variables of $r$ being equal to each other, e.g: $x =n = \ln x = m.$ Then the following:
+	\begin{align*}
+		r &= ( \frac{\ln x}{n} + \frac{n}{\ln x})^m; \quad r \neq 0; \quad r \in \mathbb{R}{+}.
+	\end{align*}
+	Admits a transecdenctal number.
+\end{definition}
+
+\begin{theorem}
+	The following plots both a real and imiginary part for both:
+	\begin{align*}
+		\frac{7}{\log n} + \frac{363 \log 7}{140} &= \sum_{n=1}^{m} \frac{\ln x}{n} + \frac{n}{\ln x}; \quad m = 7
+	\end{align*}
+	And:
+	\begin{align*}
+		\frac{7}{\log n} + \frac{\log^{7} 7}{5040} &= \prod_{n=1}^{m} \frac{\ln x}{n} + \frac{n}{\ln x}; \quad m = 7.
+	\end{align*}
+\end{theorem}
 
 \nocite{*}
 
