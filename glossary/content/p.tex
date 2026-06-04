@@ -1,12 +1,80 @@
-\documentclass[10pt]{article}
-\usepackage{graphicx}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{amsfonts}
-\usepackage{textcomp}
-\usepackage{amsthm}
-\usepackage{mathtools}
+% AUTHOR: Amlal El Mahrouss
+% PURPOSE: DN001.08: Glossary of Definitions — merged from parts 1–11.
 
+\documentclass[10pt]{article}
+
+%% ---- Core Packages ----------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+%% ---- Page Geometry ----------------------------------------
+\usepackage[
+  top=1in, bottom=1in,
+  left=0.75in, right=0.75in,
+  columnsep=0.25in
+]{geometry}
+
+%% ---- Mathematics ------------------------------------------
+\usepackage{amsmath, amssymb, amsthm, amsfonts}
+\usepackage{mathtools}
+\usepackage{bm}
+\usepackage{textcomp}
+\usepackage{esint}
+
+%% ---- Figures & Tables -------------------------------------
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+
+%% ---- Code Listings ----------------------------------------
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\lstdefinestyle{codestyle}{
+  backgroundcolor=\color{gray!8},
+  basicstyle=\ttfamily\footnotesize,
+  breakatwhitespace=false,
+  breaklines=true,
+  captionpos=b,
+  commentstyle=\color{green!50!black},
+  keywordstyle=\color{blue}\bfseries,
+  stringstyle=\color{orange!70!black},
+  numberstyle=\tiny\color{gray},
+  numbers=left,
+  numbersep=5pt,
+  showstringspaces=false,
+  frame=single,
+  rulecolor=\color{gray!40},
+  tabsize=2
+}
+\lstset{style=codestyle}
+
+%% ---- Hyperlinks -------------------------------------------
+\usepackage[
+  colorlinks=true,
+  linkcolor=blue!70!black,
+  citecolor=green!50!black,
+  urlcolor=blue!60!black
+]{hyperref}
+\usepackage{url}
+
+%% ---- Bibliography -----------------------------------------
+\usepackage[numbers, sort&compress]{natbib}
+
+%% ---- Miscellaneous ----------------------------------------
+\usepackage{enumitem}
+\usepackage{siunitx}
+\usepackage{cleveref}
+
+%% ---- Theorem Environments ---------------------------------
 \theoremstyle{plain}
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{lemma}[theorem]{Lemma}
@@ -20,16 +88,451 @@
 \theoremstyle{remark}
 \newtheorem{remark}[theorem]{Remark}
 
-\title{About This Book}
+%% ---- Custom Commands --------------------------------------
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Prob}{\mathbb{P}}
+\newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
+\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
+\newcommand{\inner}[2]{\left\langle #1,\, #2 \right\rangle}
+\newcommand{\ie}{\textit{i.e.}\xspace}
+\newcommand{\eg}{\textit{e.g.}\xspace}
+\newcommand{\etal}{\textit{et al.}\xspace}
+
+%% ---- Caption Formatting -----------------------------------
+\captionsetup{
+  font=small,
+  labelfont=bf,
+  format=hang,
+  justification=justified
+}
+
+%% ---- Header / Footer --------------------------------------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+%% ============================================================
+%%  FRONT MATTER
+%% ============================================================
+
+\title{Glossarium Aequationum}
 \author{A. E. Mahrouss}
 \date{\today}
 
+%% ============================================================
 \begin{document}
+%% ============================================================
 
 \maketitle
+\tableofcontents
+\newpage
 
-\section{On The Chapter}
+%% ============================================================
+\section{Propositum}
+%% ============================================================
 
+Here is a list of mathematical formulas, theorems, and definitions for our further work.\\
+The reason for this is to have a basic tool-kit for the future problem we will tackle on.
 
+%% ============================================================
+\section{First Part.}
+%% ============================================================
+
+\begin{definition}
+Let:
+$\forall S \in \mathbb{R}; \quad Baud(MIN) < S < Baud(MAX)$:
+\begin{align*}
+	Freq(S) &= \frac{Hi(S)}{Lo(S)} Weight(x)\\
+	-\frac{Freq(S)}{Weight(S)} &= \frac{Hi(S)}{Lo(S)}
+\end{align*}
+By Hartley's Law, the weight of $S$ over its frequency $F$, may be equal of the division between the highest signal and lowest signal of $S$.
+\end{definition}
+
+\begin{definition}
+	Let:
+	\begin{align*}
+		\int (\lambda + \mu)\sqrt{ax^2 + bx  +c} \operatorname{dx}.
+	\end{align*}
+	We define three general equations for $V'$:
+	\begin{align*}
+		V' &= (\lambda + \mu)\sqrt{ax^2 + bx  +c}x \int x \operatorname{d}(\lambda + \mu)\sqrt{ax^2 + bx  +c};\\
+		\frac{V'}{(\lambda + \mu)} &= \sqrt{ax^2 + bx  +c}x \int x \operatorname{d}(\lambda + \mu)\sqrt{ax^2 + bx  +c};\\
+		\sqrt{ax^2 + bx  +c}\frac{V'}{(\lambda + \mu)} &= (\sqrt{ax^2 + bx  +c})^{2}x \int x \operatorname{d}(\lambda + \mu)\sqrt{ax^2 + bx  +c}.
+	\end{align*}
+\end{definition}
+
+\begin{definition}
+	Thus. Let the following:
+	\begin{align*}
+		O' + (\lambda + \mu + x)^{n-2} &= (\lambda + \mu + x)^{n-1} + (\lambda + \mu + x)^{n};\\
+		\frac{O'}{(\lambda + \mu + x)^{n-2}} &= \frac{(\lambda + \mu + x)^{n-1} + (\lambda + \mu + x)^{n}}{(\lambda + \mu + x)^{n-2}}; \quad O' \neq 0.
+	\end{align*}
+\end{definition}
+
+\begin{definition}
+	Let the following:
+\begin{equation}
+    \mu(n, p) = \sum_{n}^{p} M(n, p); \quad \mu(n, p) \in \mathbb{D}^{+}
+\end{equation}
+$\forall \mu(n, p)$ There exists:
+\begin{equation}
+    \mu(n, p) = p! + \text{ } (n+1p)! + \text{ } (n+2p)! + \text{ } \dots \text{ } + (n+xp)!.
+\end{equation}
+\end{definition}
+
+\begin{definition}
+	Let for each rational number $x$ in $\mu(n, p)$ be within:
+	\begin{align*}
+		\frac{2\pi}{\mu(m, p)} < x < \mu(n, p).
+	\end{align*}
+\end{definition}
+
+\begin{definition}
+	Let:
+	\begin{align*}
+		E(x) &= \frac{\gamma(x)}{\delta(x) + \lambda(x)}; \quad \gamma(x) \neq 0.
+	\end{align*}
+	And. Let based on $E(x)$:
+	\begin{align*}
+		P' &= \prod_{n=1}^{3}\rho(x) x^{n} + \int E(x) dx;\\
+		P' &= \prod_{n=1}^{3}\rho(x) x^{n} + \int \frac{\gamma(x)}{\delta(x) + \lambda(x)} dx; \quad P(s) \neq 0;\\
+		P' &= \int \frac{\gamma(x)}{\delta(x) + \lambda(x)} dx + x^{n} \rho(x)^{3}.
+	\end{align*}
+	And. The following for $x$:
+	\begin{align*}
+		\prod_{n=1}^{3}\rho(x) x^{n} + \int \frac{\gamma(x)}{\delta(x) + \lambda(x)} dx; \quad P(s) \neq 0.
+	\end{align*}
+	Admits a solution in $\mathbb{R}$ of the following:
+	\begin{align*}
+		P'' &= \prod_{n=1}^{3}\rho(x) x^{n} + \int \frac{\gamma(x)}{\delta(x) + \lambda(x)} dx; \quad P'' \neq 0.
+	\end{align*}
+	Separately, let the following:
+	\begin{align*}
+		L' + \lambda(x)^{2} &= \frac{\gamma(x)}{\delta(x)};\\
+	 	L' + \lambda(x) &= \frac{\gamma(x)}{\delta(x)  \lambda(x) };\\
+	 	L' &= \frac{\gamma(x)}{\delta(x)  \lambda(x) } - \lambda(x); \quad \delta(x)\lambda(x) \neq 0.
+	\end{align*}
+	Where we must find a value of $\ln x$ that equals:
+	\begin{align*}
+		&= \frac{\ln x}{\Delta y};\\
+		\Delta y &= \ln x;
+	\end{align*}
+	Separately, we must find $I'$ that equals:
+	\begin{align*}
+		r &= ( \frac{\ln x}{\Delta n} + \frac{\Delta n}{\ln x})^m; \quad r \neq 0; \quad r \in \mathbb{R}{+};\\
+		I' &= - r + ( \frac{\ln x}{\Delta n} + \frac{\Delta n}{\ln x})^m; \quad r \neq 0; \quad r \in \mathbb{R}{+};
+	\end{align*}
+	And. For all variables of $r$ being equal to each other, e.g: $x =n = \ln x = m.$ Then the following:
+	\begin{align*}
+		r &= ( \frac{\ln x}{n} + \frac{n}{\ln x})^m; \quad r \neq 0; \quad r \in \mathbb{R}{+}.
+	\end{align*}
+	Admits a transecdenctal number.
+\end{definition}
+
+\begin{definition}
+	The following plots both a real and imiginary part for both:
+	\begin{align*}
+		\frac{7}{\log n} + \frac{363 \log 7}{140} &= \sum_{n=1}^{m} \frac{\ln x}{n} + \frac{n}{\ln x}; \quad m = 7
+	\end{align*}
+	And:
+	\begin{align*}
+		\frac{7}{\log n} + \frac{\log^{7} 7}{5040} &= \prod_{n=1}^{m} \frac{\ln x}{n} + \frac{n}{\ln x}; \quad m = 7.
+	\end{align*}
+\end{definition}
+
+\begin{definition}
+	Let us define the following equations:
+	\begin{align*}
+		\frac{\phi(n^{s}!)}{\tau(n^{s}!)} + \frac{\phi(n^{s}!)}{\lambda(n^{s}!)} + \phi(n^{s}!) &= Z'; \quad x \in \mathbb{Z}.
+	\end{align*}
+	That admits the following alternate form:
+	\begin{align*}
+		Z' &= \frac{\phi(n^{s}!)}{\tau(n^{s}!)} + \frac{\phi(n^{s}!)}{\lambda(n^{s}!)} + \phi(n^{s}!);\\
+		&= \phi(n^{s}!)(\frac{1}{\tau(n^{s}!)} + \frac{1}{\lambda(n^{s}!)}) + \phi(n^{s}!);\\
+		&= \phi(n^{s}!)(\frac{1}{\tau(n^{s}!)} + \frac{1}{\lambda(n^{s}!)} + 1).
+	\end{align*}
+	Alternatively, we can assume another equation:
+	\begin{align*}
+		\phi(n^{s}!) &= \frac{(s-3)}{\tau(n^{s}!)} + \frac{(s-2)}{\lambda(n^{s}!)} + \frac{(s-1)}{f'(n^{s}!)} + s; \quad s \neq 0.
+	\end{align*}
+	Assuming $\phi(n^{s}!) \neq 0.$
+\end{definition}
+
+\begin{definition}
+	Let us define the following equations:
+	\begin{align*}
+		\int \frac{\lambda(y) \sqrt{x}}{x} dx &= - \prod_{n=1}^{y}\rho(x) x^{n} + \mathrm{C}';\\
+		\int \frac{\lambda(y) \sqrt{x}}{x} dx + \prod_{n=1}^{y}\rho(x) x^{n} &= \mathrm{C}'
+	\end{align*}
+	Admit results in a domain $\mathbb{D}^{+}$. Alternatively we can suppose the following equations.
+	\begin{align*}
+		\gamma(x)+\lambda(x) + \prod_{n=2}^{4}\frac{1}{\rho(x)}^{n} &= \pm \mathrm{E};\\
+		\gamma(x)+\lambda(x) + \frac{1}{\rho(x)} \frac{1}{\rho(x)}^{2} \frac{1}{\rho(x)}^{3} \frac{1}{\rho(x)}^{4} &= \pm \mathrm{E};\\
+		\gamma(x)+\lambda(x) + \frac{1}{\rho(x)^{10}} &= \pm \mathrm{E}.
+	\end{align*}
+	Assuming all variables are non-zero.
+\end{definition}
+
+\begin{definition}
+	Let us define the following:
+	\begin{align*}
+	\Delta x &=	\frac{y}{1} + \gamma(x); \quad \gamma(x) < \Delta x.
+	\end{align*}
+  Separately, we have the following:
+	\begin{align*}
+		\mathrm{A'} &= \gamma(x)+\Delta x + \frac{1}{\lambda(x)}; \quad \lambda(x) \neq 0.
+	\end{align*}
+  Separately, we have the following:
+	\begin{align*}
+		\frac{x}{\lambda(x)} + \gamma(x) &= \frac{x}{y} + \mathrm{Y'};\\
+		\frac{x}{\lambda(x)} + \gamma(x) - \frac{x}{y} &= \mathrm{Y'}; \quad \Delta x \in \mathbb{D};\\
+		\lambda(x) + \gamma(x) -\frac{x}{y} &= \frac{\mathrm{Y'}}{x}; \quad x \neq 0.
+	\end{align*}
+	For all valid numbers in the domain '$\mathbb{D}$'.
+\end{definition}
+
+\begin{definition}
+	Let an equation of the following for all variables in $\mathbb{R}$:
+	\begin{align*}
+		&= \iiint (x y z)^{3} dx.dy.dz;\\
+		c_{1} y z + c_{2} z + c_{3} + \frac{1}{64} + x^{4} + y^{4} + z^{4} &= \iiint (x y z)^{3} dx.dy.dz.
+	\end{align*}
+	An equation based on the result would be of the following:
+	\begin{align*}
+		(c_{1} y z + c_{2} z + c_{3} + \frac{1}{64} + x^{4} + y^{4} + z^{4})^{n-2} + \sum_{n=1}^{p} \frac{ (c_{1} y z + c_{2} z + c_{3} + \frac{1}{64} + x^{4} + y^{4} + z^{4})^{n}}{ (c_{1} y z + c_{2} z + c_{3} + \frac{1}{64} + x^{4} + y^{4} + z^{4})^{n-1}} &= \pm \mathrm{C};
+	\end{align*}
+\end{definition}
+
+\begin{definition}
+	We define Euler–Mascheroni constant:
+	\begin{equation}
+		\gamma = \lim_{n \to \infty}(\sum_{k=1}^{n}(\frac{1}{k}-\log(n))).
+	\end{equation}
+	Which may be rewritten to per M. Ram Murty and N. Saradha findings:
+	\begin{equation}
+		\gamma(a, q) = \lim_{n \to \infty}\sum_{k=0}^{n}(\frac{1}{a+kq}-\frac{\log(a+nq)}{q}).
+	\end{equation}
+\end{definition}
+
+\begin{definition}
+	The following is the closed form of a series of low-integer-order polylogarithms:
+	\begin{align*}
+		\frac{\operatorname{d}}{\operatorname{dz}} \operatorname{Li}_{n}(z) &= \frac{\operatorname{Li}_{n-1}(z)}{z}.
+	\end{align*}
+\end{definition}
+
+\begin{definition}
+	The following is a series of the exponential function:
+	\begin{align*}
+		\sum_{k=0}^{\infty} \frac{z^k}{k!} &= e^{z}.
+	\end{align*}
+\end{definition}
+
+\begin{definition}
+	The following is a series of Euler–Mascheroni constants over $k$:
+	\begin{align*}
+		\sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)}; \quad qk \neq 0.
+	\end{align*}
+\end{definition}
+
+\begin{definition}
+	The following is a series of $k$ over Euler–Mascheroni constants:
+	\begin{align*}
+		\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k}; \quad k \neq 0.
+	\end{align*}
+\end{definition}
+
+\begin{definition}
+	The following inequality may also be defined:
+	\begin{align*}
+		\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} < x < \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)}; \quad x \neq 0.
+	\end{align*}
+\end{definition}
+
+\begin{definition}
+	Applying the previous definition laid out on previous papers. We satisfy the following:
+	\begin{align*}
+		y &= \pm z \frac{b}{c!}; \quad \pm z \in \mathbb{D}^{+}\\
+		\frac{y}{\pm z} &= c!; \quad \pm z \neq 0\\
+		-c! &= \pm \frac{y}{\pm z}.
+	\end{align*}
+	For any domain $\mathbb{D}^{+}$. Where the following is a Taylor series of:
+	\begin{equation}
+		z = \frac{x^n}{n!}; \quad n \neq 0.
+	\end{equation}
+\end{definition}
+
+\begin{definition}
+	Let the assumption:
+	\begin{align*}
+		y &= \sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} < x < \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)};\\
+		\frac{y}{\pm z} &= \frac{\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} < x < \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)}}{\pm z}.
+	\end{align*}
+	Now in order to continue further, we need to solve:
+	\begin{align*}
+		\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} &\leq x < \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)};\\
+		\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} &\leq x < \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)};\\
+		\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)} &\leq x;
+	\end{align*}
+	Therefore. For $x = \sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)}.$
+	\begin{align*}
+		\pm z + y &= \sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)};\\
+		y &= \frac{\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)}}{\pm z}.
+	\end{align*}
+	Then. For: x = $\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)}.$:
+	\begin{align*}
+		\pm z + \frac{\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty}\frac{k}{\gamma(a, qk)}}{\pm z} &= \sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty}\frac{k}{\gamma(a, qk)};\\
+		\frac{\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)}}{\pm z} &= \frac{\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)}}{\pm z}; \quad \pm z \neq 0.
+	\end{align*}
+\end{definition}
+
+\begin{definition}
+	We define the Golden-ratio constant:
+	\begin{align*}
+		\phi &= \frac{1+\sqrt{5}}{2}.
+	\end{align*}
+	And the Supergolden-ratio constant:
+	\begin{align*}
+		\psi &= \frac{1+\frac{29+3\sqrt{93}}{2}+\frac{29+3\sqrt{93}}{2}}{3}.
+	\end{align*}
+	And the Kepler-Bouwkamp constant:
+	\begin{align*}
+		K' &= \prod_{n=3}^{\pi} \cos(\frac{\pi}{n});\\
+		&=  \cos(\frac{\pi}{n-1}) \cos(\frac{\pi}{n}) \dots
+	\end{align*}
+	And let define an equation of the previous result of:
+	\begin{align*}
+		&= \pm z + \frac{\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty}\frac{k}{\gamma(a, qk)}}{\pm z};\\
+		\pm z^2 &= \sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty}\frac{k}{\gamma(a, qk)};\\
+		\mathrm{A'}' = \pm z^2 &= \sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty}\frac{k}{\gamma(a, qk)};\\
+		\mathrm{A'}'' = \pm z^{2} - \sum_{k=1}^{\infty}\frac{k}{\gamma(a, qk)} &= \sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k}; \quad k \neq 0.
+	\end{align*}
+\end{definition}
+
+\begin{definition}
+	For the following result:
+	\begin{align*}
+		\sqrt{2}+2&=\sqrt{2} + x;\\
+		2\sqrt{2}+2 &=x;\\
+		2(\sqrt{2} + 1) &= x;
+	\end{align*}
+	Then we can solve for $l=x.$
+	\begin{align*}
+		l + r &\leq n - 1;\\
+		2(\sqrt{2} + 1) + r &\leq n - 1.
+	\end{align*}
+	Also. $\forall x$ There exists for $r \in \mathbb{D}^{+}.$
+	\begin{align*}
+		2(\sqrt{2} + 1) + \frac{\frac{n - 1}{2} - 4}{2}  &\leq \frac{n - 1}{2} + n - 1;\\
+		2(\sqrt{2} + 1) + \frac{\frac{n - 1}{2} - 4}{2} - \frac{n - 1}{2} &\leq n - 1.
+	\end{align*}
+\end{definition}
+
+\begin{definition}
+	Let the general definition be:
+	\begin{align*}
+		B' &= 2(\sqrt{2} + 1) + \frac{\frac{n - 1}{2} - 4}{2} - \frac{n - 1}{2};\\
+		&= \frac{\frac{\frac{n - 1}{2} - 4}{2} - \frac{n - 1}{2}}{2(\sqrt{2} + 1)}.
+	\end{align*}
+	Replacing $\frac{n - 1}{2}$ to solve for $\phi$:
+	\begin{align*}
+		B' &= 2(\sqrt{2} + 1) + \frac{\frac{n - 1}{2} - 4}{2} - \phi;\\
+		&= \frac{\frac{\phi - 4}{2} - \phi}{2(\sqrt{2} + 1)};\\
+		\mathrm{C}' &= \frac{\phi - 4}{2} - \phi.
+	\end{align*}
+\end{definition}
+
+\begin{definition}
+	Let the following constant per be:
+	\begin{align*}
+		\mathrm{C}' &= \frac{\phi - 4}{2} - \phi;\\
+		\mathrm{C}' &= \frac{\frac{1+\sqrt{5}}{2} - 4}{2} - \frac{1+\sqrt{5}}{2}.
+	\end{align*}
+\end{definition}
+
+\begin{definition}
+	Let the following equation:
+	\begin{align*}
+		2(\sqrt{2} + 1) + \frac{\frac{n - 1}{2} - 4}{2}  &\leq \frac{n - 1}{2} + n - 1;\\
+		2(\sqrt{2} + 1) + \frac{\frac{n - 1}{2} - 4}{2} - \frac{n - 1}{2} &\leq n - 1;\\
+		2(\sqrt{2} + 1) + \frac{\frac{n - 1}{2} - 4}{2} &\leq 0.
+	\end{align*}
+\end{definition}
+
+\begin{definition}
+	Let the following equation:
+	\begin{align*}
+		2(\sqrt{2} + 1) + \frac{\frac{n - 1}{2} - 4}{2} &= x;
+	\end{align*}
+	Solve for $n=5.$:
+	\begin{align*}
+		2(\sqrt{2} + 1) + \frac{5}{2} &= x;\\
+		\sqrt{2}+2 + \frac{5}{2} &= x.
+	\end{align*}
+	And. We optionally expand the following:
+	\begin{align*}
+		2+\frac{5}{2} &= \frac{x}{\sqrt{2}};\\
+		&= \frac{x}{\sqrt{2}}.
+	\end{align*}
+\end{definition}
+
+\begin{definition}
+	Let the following function of x:
+	\begin{align*}
+		f'(x)&= \frac{\ln (x)^{\mathrm{e}}}{\mathrm{e}} \cdot \mathrm{e}^{x};\\
+		f(x) &= \int_{0}^{1} f'(x)dx;\\
+		&= \int_{0}^{1} \frac{\ln (x)^{\mathrm{e}}}{\mathrm{e}} \cdot \mathrm{e}^{x} dx.
+	\end{align*}
+\end{definition}
+
+\begin{definition}
+	Let the following equation:
+	\begin{align*}
+		x &= 2(\sqrt{2} + 1) + \frac{5}{2}.
+	\end{align*}
+	Thus for $x$:
+	\begin{align*}
+		\int_{0}^{1} \frac{\ln (x)^{\mathrm{e}}}{\mathrm{e}} \cdot \mathrm{e}^{x} dx.
+	\end{align*}
+	The following definite integral admits a solution $\mathrm{R}$.
+	\begin{align*}
+		\mathrm{R'} &= \int_{0}^{1} \frac{\ln (x)^{\mathrm{e}}}{\mathrm{e}} \cdot \mathrm{e}^{x} dx;\\
+		&= \int_{0}^{1} \frac{\ln (2(\sqrt{2} + 1) + \frac{5}{2})^{\mathrm{e}}}{\mathrm{e}} \cdot \mathrm{e}^{2(\sqrt{2} + 1) + \frac{5}{2}};\\
+		&= \mathrm{e}^{7/2+2 \sqrt{2}} \log^{e}(\frac{9}{2}+2+\sqrt{2}) + \mathrm{C}.
+	\end{align*}
+\end{definition}
+
+\begin{definition}
+	Let the following definite integral:
+	\begin{align*}
+		\int_{C}^{\pi} \frac{ \ln |x| \cdot f(y)f'(x) }{x^{n}y!} dx &= \pm D; \quad \pm D \neq 0.
+	\end{align*}
+	The following integrals admits a solution of:
+	\begin{align*}
+		\int_{C}^{\pi} \frac{ \ln |x| \cdot f(y)f'(x) }{x^{n}y!} dx &= [\frac{ \ln |x| \cdot f(y)f'(x) }{x^{n}y!}]_{C}^{\pi} + D.
+	\end{align*}
+	Let us impose two intervals:
+	\begin{align*}
+		\frac{\pi}{\frac{ \ln |x| \cdot f(y)f'(x) }{x^{n}y!}} < \frac{ \ln |x| \cdot f(y)f'(x) }{x^{n}y!} < \sum_{n=1}^{\infty} \frac{ \ln |x| \cdot f(y)f'(x) }{x^{n}y!};\\
+	\frac{\pi}{\ln |x| \cdot f(y)f'(x) } < \ln |x| \cdot f(y)f'(x)  < \sum_{n=1}^{\infty} \ln |x| \cdot f(y)f'(x).
+	\end{align*}
+\end{definition}
+
+\begin{definition}
+	Let the following equation:
+	\begin{align*}
+		\pm \frac{\gamma(x-y)}{|x - y|^{n}}! &= \pm \frac{\sum_{n=1}^{p}(\frac{\gamma(x-y)}{1})}{\sum_{n=1}^{p}(|x - y|^{n})} + C.
+	\end{align*}
+\end{definition}
+
+\nocite{*}
+
+\bibliographystyle{acm}
+\bibliography{Bell_System_Hartley, S0022314X10001836, Fatou1906, A_Course_of_Pure_Mathematics, General_Theory_Dirichlet_Series, Riemann}
 
 \end{document}
