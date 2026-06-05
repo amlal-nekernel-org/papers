@@ -154,7 +154,7 @@ The theorems spans from Mathematics to Information Theory.
 
 \begin{theorem}
 Let the following:
-$\forall S \in \mathbb{R}, \quad Baud(MIN) < S < Baud(MAX).$:
+$\forall S \in \mathbb{R}, \quad Baud(MIN) < Freq(S) < Baud(MAX).$ Where $Baud(MIN)$ is the minimal baud rate and $Baud(MAX)$ the maximal baud rate:
 \begin{align*}
 	Freq(S) &= \frac{Hi(S)}{Lo(S)} Weight(x),\\
 	-\frac{Freq(S)}{Weight(S)} &= \frac{Hi(S)}{Lo(S)}.
@@ -163,11 +163,11 @@ By Hartley's Law, the weight of $S$ over its frequency $F$, may be equal of the 
 \end{theorem}
 
 \begin{theorem}
-	Let for any $a, \mu, \lambda, b, c \in \mathbb{R}$:
+	Let for any $\forall a, \mu, \lambda, b, c \in \mathbb{R}$:
 	\begin{align*}
 		V &= \int (\lambda + \mu)\sqrt{ax^2 + bx  +c} \operatorname{dx}.
 	\end{align*}
-	We define three general equations for $V'$:
+	We define three general equations for $\forall V'$:
 	\begin{align*}
 		V' &= (\lambda + \mu)\sqrt{ax^2 + bx  +c}x \int x \operatorname{d}(\lambda + \mu)\sqrt{ax^2 + bx  +c},\\
 		\frac{V'}{(\lambda + \mu)} &= \sqrt{ax^2 + bx  +c}x \int x \operatorname{d}(\lambda + \mu)\sqrt{ax^2 + bx  +c},\\
@@ -176,7 +176,7 @@ By Hartley's Law, the weight of $S$ over its frequency $F$, may be equal of the 
 \end{theorem}
 
 \begin{theorem}
-	Thus let the following:
+	Thus let the following based on [2.2]:
 	\begin{align*}
 		O' + (\lambda + \mu + x)^{n-2} &= (\lambda + \mu + x)^{n-1} + (\lambda + \mu + x)^{n},\\
 		\frac{O'}{(\lambda + \mu + x)^{n-2}} &= \frac{(\lambda + \mu + x)^{n-1} + (\lambda + \mu + x)^{n}}{(\lambda + \mu + x)^{n-2}}, \quad O' \neq 0.
@@ -184,7 +184,7 @@ By Hartley's Law, the weight of $S$ over its frequency $F$, may be equal of the 
 \end{theorem}
 
 \begin{theorem}
-	Let the following for any $m, n \in \mathbb{R}^{+}.$:
+	Let the following for any $\forall m, n \in \mathbb{R}^{+}.$:
 \begin{equation}
     \mu(n, p) = \sum_{n}^{p} M(n, p), \quad \mu(n, p) \in \mathbb{D}^{+}
 \end{equation}
@@ -195,69 +195,69 @@ $\forall \mu(n, p)$ There exists:
 \end{theorem}
 
 \begin{theorem}
-	Let a set of rational numbers $x \in \mathbb{R},$ in $\mu(n, p)  \in \mathbb{R},$ be in the following inequality:
+	Let a set of rational numbers $\forall x \in \mathbb{R},$ in $\forall \mu(n, p) \in \mathbb{R},$ be in the following inequality:
 	\begin{align*}
 		\frac{2\pi}{\mu(m, p)} < x < \mu(n, p), x \neq 0.
 	\end{align*}
 \end{theorem}
 
 \begin{theorem}
-	Let for any $x \in \mathbb{R}$:
+	Let for any real $\forall x \in \mathbb{R}.$ If and only If: $x \neq 0.$:
 	\begin{align*}
 		E(x) &= \frac{\gamma(x)}{\delta(x) + \lambda(x)}, \quad \gamma(x) \neq 0.
 	\end{align*}
-	And based on $E(x)$:
+	Therefore, based on $E(x)$:
 	\begin{align*}
 		P &= \prod_{n=1}^{3}\rho(x) x^{n} + \int E(x) dx,\\
 		P &= \prod_{n=1}^{3}\rho(x) x^{n} + \int \frac{\gamma(x)}{\delta(x) + \lambda(x)} dx,\\
 		P &= \int \frac{\gamma(x)}{\delta(x) + \lambda(x)} dx + x^{n} \rho(x)^{3}, \quad P(x) \neq 0.
 	\end{align*}
-	Separately, let the followin $x, n \in \mathbb{R}$:
+	Separately, let the followin $\forall x, n \in \mathbb{R}$:
 	\begin{align*}
 		\prod_{n=1}^{3}\rho(x) x^{n} + \int \frac{\gamma(x)}{\delta(x) + \lambda(x)} dx \in \mathbb{R}.
 	\end{align*}
-	Admits a solution in $\mathbb{R}$ of the following:
+	Admits a solution in $\forall s = P' \in \mathbb{R},$ of the following:
 	\begin{align*}
 		P' &= \prod_{n=1}^{3}\rho(x) x^{n} + \int \frac{\gamma(x)}{\delta(x) + \lambda(x)} dx, \quad P' \neq 0.
 	\end{align*}
-	Separately, let the following:
+	Separately, let the following $\forall x, L \in \mathbb{R}.$:
 	\begin{align*}
 		L + \lambda(x)^{2} &= \frac{\gamma(x)}{\delta(x)},\\
 	 	L + \lambda(x) &= \frac{\gamma(x)}{\delta(x)  \lambda(x) },\\
 	 	L &= \frac{\gamma(x)}{\delta(x)  \lambda(x) } - \lambda(x), \quad \delta(x)\lambda(x) \neq 0.
 	\end{align*}
-	Where we must find a value of $\ln x$ that equals:
+	Where the value of $\forall \Delta y \in \mathbb{R}$ equals:
 	\begin{align*}
 		&= \frac{\ln x}{\Delta y},\\
 		\Delta y &= \ln x,
 	\end{align*}
-	Separately, we must find $I$ that equals:
+	Separately, we find $\forall I \in \mathbb{R}$ that equals:
 	\begin{align*}
 		I &= r = ( \frac{\ln x}{\Delta n} + \frac{\Delta n}{\ln x})^m, \quad r \neq 0, \quad r \in \mathbb{R}{+},\\
 		&= - r + ( \frac{\ln x}{\Delta n} + \frac{\Delta n}{\ln x})^m, \quad r \neq 0, \quad r \in \mathbb{R}{+},
 	\end{align*}
-	And. For all variables of $r$ being equal to each other, e.g: $x =n = \ln x = m.$ Then the following:
+	And for all variables of $r$ being equal to each other, e.g: $x =n = \ln x = m.$ Then the following:
 	\begin{align*}
 		r &= ( \frac{\ln x}{n} + \frac{n}{\ln x})^m, \quad r \neq 0, \quad r \in \mathbb{R}{+}.
 	\end{align*}
-	Admits a transcendental number for $r \in \mathbb{R}$.
+	Admits a transcendental number, if and only if: $r \neq 0, \quad r \in \mathbb{R}$.
 \end{theorem}
 
 \begin{theorem}
 	Let the following plots both a real and imiginary part for both. If and only If: $x, n \in \mathbb{R}.$:
 	\begin{align*}
-		\frac{7}{\log n} + \frac{363 \log 7}{140} &= \sum_{n=1}^{m} \frac{\ln x}{n} + \frac{n}{\ln x}, \quad m = 7
+		\frac{7}{\log n} + \frac{363 \log 7}{140} &= \sum_{n=1}^{m} \frac{\ln x}{n} + \frac{n}{\ln x}, \quad m = 7, \quad \log n \neq \log 1.
 	\end{align*}
-	And thus applying the same process for products of $(\frac{\ln x}{n} + \frac{n}{\ln x}).$:
+	And thus by computing the products of $(\frac{\ln x}{n} + \frac{n}{\ln x}).$:
 	\begin{align*}
-		\frac{7}{\log n} + \frac{\log^{7} 7}{5040} &= \prod_{n=1}^{m} \frac{\ln x}{n} + \frac{n}{\ln x}, \quad m = 7.
+		\frac{7}{\log n} + \frac{\log^{7} 7}{5040} &= \prod_{n=1}^{m} \frac{\ln x}{n} + \frac{n}{\ln x}, \quad m = 7, \quad \log n \neq \log 1.
 	\end{align*}
 \end{theorem}
 
 \begin{theorem}
-	Let us define the following equations for $\mathbb{n} \in \mathbb{N}^{+}$:
+	Let us define the following equations for $\forall n \in \mathbb{R}^{+}$:
 	\begin{align*}
-		Z &= \frac{\phi(n^{s}!)}{\tau(n^{s}!)} + \frac{\phi(n^{s}!)}{\lambda(n^{s}!)} + \phi(n^{s}!), \quad x \in \mathbb{Z}.
+		Z &= \frac{\phi(n^{s}!)}{\tau(n^{s}!)} + \frac{\phi(n^{s}!)}{\lambda(n^{s}!)} + \phi(n^{s}!), \quad Z \in \mathbb{Z}.
 	\end{align*}
 	That admits the following alternate form:
 	\begin{align*}
@@ -267,16 +267,16 @@ $\forall \mu(n, p)$ There exists:
 	\end{align*}
 	Alternatively, we can assume another equation:
 	\begin{align*}
-		\phi(n^{s}!) &= \frac{(s-3)}{\tau(n^{s}!)} + \frac{(s-2)}{\lambda(n^{s}!)} + \frac{(s-1)}{f'(n^{s}!)} + s, \quad s \neq 0.
+		\phi(s, n) &= \frac{(s-3)}{\tau(n^{s}!)} + \frac{(s-2)}{\lambda(n^{s}!)} + \frac{(s-1)}{f'(n^{s}!)} + s, \quad s \neq 0.
 	\end{align*}
-	Assuming $\phi(n^{s}!) \neq 0.$ And $\phi(n^{s}!) \in \mathbb{R}.$
+	Assuming $\phi(s, n) \neq 0.$ And $\phi(s, n) \in \mathbb{R}.$
 \end{theorem}
 
 \begin{theorem}
-	Let a theorem the following equations for any $x, n \in \mathbb{R}$:
+	Let a theorem of the following equations for any $\forall x, n \in \mathbb{R}$:
 	\begin{align*}
 		C &= \int \frac{\lambda(y) \sqrt{x}}{x} dx = - \prod_{n=1}^{y}\rho(x) x^{n} + \mathrm{C}',\\
-		\int \frac{\lambda(y) \sqrt{x}}{x} dx + \prod_{n=1}^{y}\rho(x) x^{n} &= \mathrm{C}'
+		C &= \int \frac{\lambda(y) \sqrt{x}}{x} dx + \prod_{n=1}^{y}\rho(x) x^{n} = \mathrm{C}'
 	\end{align*}
 	Admits a set of results in a domain $\mathbb{D}^{+}$. Alternatively we can suppose the following equations.
 	\begin{align*}
@@ -288,15 +288,15 @@ $\forall \mu(n, p)$ There exists:
 \end{theorem}
 
 \begin{theorem}
-	Let us define the following for $x, y \in \mathbb{R}$:
+	Let us define the following for $\forall \Delta x, x, y \in \mathbb{R}$:
 	\begin{align*}
-	\Delta x &=	\frac{y}{1} + \gamma(x), \quad \gamma(x) < \Delta x.
+	\Delta x &=	y + \gamma(x), \quad \gamma(x) < \Delta x.
 	\end{align*}
   	Separately, we have the following for $x \in \mathbb{R}$:
 	\begin{align*}
 		\mathrm{A} &= \gamma(x)+\Delta x + \frac{1}{\lambda(x)}, \quad \lambda(x) \neq 0.
 	\end{align*}
-  Separately, we have the following  for $x, y \in \mathbb{R}$:
+  Separately, we have the following  for $\forall x, y \in \mathbb{R}$:
 	\begin{align*}
 		\frac{x}{\lambda(x)} + \gamma(x) &= \frac{x}{y} + \mathrm{Y'},\\
 		\frac{x}{\lambda(x)} + \gamma(x) - \frac{x}{y} &= \mathrm{Y'}, \quad \Delta x \in \mathbb{D},\\
@@ -306,18 +306,18 @@ $\forall \mu(n, p)$ There exists:
 \end{theorem}
 
 \begin{theorem}
-	Let an equation of the following for $x, y, z \in \mathbb{R}$:
+	Let an equation of the following for $\forall x, y, z \in \mathbb{R}$:
 	\begin{align*}
 		L &= \iiint (x y z)^{3} dx.dy.dz,\\
 		c_{1} y z + c_{2} z + c_{3} + \frac{1}{64} + x^{4} + y^{4} + z^{4} &= \iiint (x y z)^{3} dx.dy.dz.
 	\end{align*}
-	Admits an equation based on the result of the following:
+	Admits the following equation $\forall c, x, y, z \in \mathbb{R}.$:
 	\begin{align*}
 		(c_{1} y z + c_{2} z + c_{3} + \frac{1}{64} + x^{4} + y^{4} + z^{4})^{n-2} + \sum_{n=1}^{p} \frac{ (c_{1} y z + c_{2} z + c_{3} + \frac{1}{64} + x^{4} + y^{4} + z^{4})^{n}}{ (c_{1} y z + c_{2} z + c_{3} + \frac{1}{64} + x^{4} + y^{4} + z^{4})^{n-1}} &= \pm \mathrm{C},
 	\end{align*}
 \end{theorem}
 
-\begin{theorem}
+\begin{definition}
 	We define Euler–Mascheroni constant:
 	\begin{equation}
 		\gamma = \lim_{n \to \infty}(\sum_{k=1}^{n}(\frac{1}{k}-\log(n))).
@@ -326,21 +326,21 @@ $\forall \mu(n, p)$ There exists:
 	\begin{equation}
 		\gamma(a, q) = \lim_{n \to \infty}\sum_{k=0}^{n}(\frac{1}{a+kq}-\frac{\log(a+nq)}{q}).
 	\end{equation}
-\end{theorem}
+\end{definition}
 
-\begin{theorem}
+\begin{definition}
 	The following is the closed form of a series of low-integer-order polylogarithms:
 	\begin{align*}
 		\frac{\operatorname{d}}{\operatorname{dz}} \operatorname{Li}_{n}(z) &= \frac{\operatorname{Li}_{n-1}(z)}{z}.
 	\end{align*}
-\end{theorem}
+\end{definition}
 
-\begin{theorem}
+\begin{definition}
 	The following is a series of the exponential function:
 	\begin{align*}
 		\sum_{k=0}^{\infty} \frac{z^k}{k!} &= e^{z}.
 	\end{align*}
-\end{theorem}
+\end{definition}
 
 \begin{theorem}
 	The following is a series of Euler–Mascheroni constants over $k$:
@@ -377,60 +377,60 @@ $\forall \mu(n, p)$ There exists:
 \end{theorem}
 
 \begin{theorem}
-	Let for $a, q, k, x \in \mathbb{R}$:
+	Let for $\forall a, q, k, x \in \mathbb{R}$:
 	\begin{align*}
 		y &= \sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} < x < \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)},\\
 		\frac{y}{\pm z} &= \frac{\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} < x < \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)}}{\pm z}.
 	\end{align*}
-	Now in order to continue further, we need to solve:
+	Now in order to continue further, we need to solve $\forall x \in \mathbb{R}.$:
 	\begin{align*}
 		\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} &\leq x < \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)},\\
 		\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} &\leq x < \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)},\\
 		\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)} &\leq x,
 	\end{align*}
-	Therefore. For $x = \sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)}.$
+	Therefore, for $x = \sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)}, \forall x \in \mathbb{R}.$
 	\begin{align*}
 		\pm z + y &= \sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)},\\
 		y &= \frac{\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)}}{\pm z}.
 	\end{align*}
-	Then for: x = $\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)}.$:
+	Then for: x = $\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)}, \forall x \in \mathbb{R}.$:
 	\begin{align*}
 		\pm z + \frac{\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty}\frac{k}{\gamma(a, qk)}}{\pm z} &= \sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty}\frac{k}{\gamma(a, qk)},\\
 		\frac{\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)}}{\pm z} &= \frac{\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)}}{\pm z}, \quad \pm z \neq 0.
 	\end{align*}
 \end{theorem}
 
-\begin{theorem}
+\begin{definition}
 	We define the Golden-ratio constant:
 	\begin{align*}
-		\phi &= \frac{1+\sqrt{5}}{2}.
+		\phi &= \frac{1+\sqrt{5}}{2}, \forall \phi \in \mathbb{R}.
 	\end{align*}
 	And the Supergolden-ratio constant:
 	\begin{align*}
-		\psi &= \frac{1+\frac{29+3\sqrt{93}}{2}+\frac{29+3\sqrt{93}}{2}}{3}.
+		\psi &= \frac{1+\frac{29+3\sqrt{93}}{2}+\frac{29+3\sqrt{93}}{2}}{3}, \forall \psi \in \mathbb{R}.
 	\end{align*}
 	And the Kepler-Bouwkamp constant:
 	\begin{align*}
 		K &= \prod_{n=3}^{\pi} \cos(\frac{\pi}{n}),\\
-		&=  \cos(\frac{\pi}{n-1}) \cos(\frac{\pi}{n}) \dots
+		&= \cos(\frac{\pi}{n-1}) \cos(\frac{\pi}{n}) \dots, \forall K \in \mathbb{R}.
 	\end{align*}
-	And. For an equation of the previous result of $Z$:
+	And. For an equation of the previous result of [2.19]:
 	\begin{align*}
 		A &= \pm z + \frac{\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty}\frac{k}{\gamma(a, qk)}}{\pm z},\\
 		\pm z^2 &= \sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty}\frac{k}{\gamma(a, qk)},\\
 		\mathrm{A}' = \pm z^2 &= \sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty}\frac{k}{\gamma(a, qk)},\\
-		\mathrm{A}'' = \pm z^{2} - \sum_{k=1}^{\infty}\frac{k}{\gamma(a, qk)} &= \sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k}, \quad k \neq 0.
+		\mathrm{A}'' = \pm z^{2} - \sum_{k=1}^{\infty}\frac{k}{\gamma(a, qk)} &= \sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k}, \quad k \neq 0, \quad \forall A \in \mathbb{R}.
 	\end{align*}
-\end{theorem}
+\end{definition}
 
 \begin{theorem}
-	Let for the following result for $x \in \mathbb{R}.$:
+	Let for the following result for $\forall x \in \mathbb{R}.$:
 	\begin{align*}
 		\sqrt{2}+2&=\sqrt{2} + x,\\
 		2\sqrt{2}+2 &=x,\\
 		2(\sqrt{2} + 1) &= x,
 	\end{align*}
-	Then we can solve for $l=x.$
+	Then we can solve for $l=x, \forall l \in \mathbb{R}.$
 	\begin{align*}
 		l + r &\leq n - 1,\\
 		2(\sqrt{2} + 1) + r &\leq n - 1.
@@ -443,12 +443,12 @@ $\forall \mu(n, p)$ There exists:
 \end{theorem}
 
 \begin{theorem}
-	Let a general theorem of the following for $x \in \mathbb{R}$ be:
+	Let a general theorem of the following for $\forall x \in \mathbb{R}$ be:
 	\begin{align*}
 		B &= 2(\sqrt{2} + 1) + \frac{\frac{n - 1}{2} - 4}{2} - \frac{n - 1}{2},\\
 		&= \frac{\frac{\frac{n - 1}{2} - 4}{2} - \frac{n - 1}{2}}{2(\sqrt{2} + 1)}.
 	\end{align*}
-	Replacing $\frac{n - 1}{2}$ to solve for $\phi$:
+	substituting $\frac{n - 1}{2}$ with $\phi$:
 	\begin{align*}
 		C &= 2(\sqrt{2} + 1) + \frac{\frac{n - 1}{2} - 4}{2} - \phi,\\
 		&= \frac{\frac{\phi - 4}{2} - \phi}{2(\sqrt{2} + 1)},\\
@@ -457,7 +457,7 @@ $\forall \mu(n, p)$ There exists:
 \end{theorem}
 
 \begin{theorem}
-	Let the following constant $C$ be:
+	Let the following constant $C \in \mathbb{R}.$ admit a derivative of the following:
 	\begin{align*}
 		\mathrm{C}' &= \frac{\phi - 4}{2} - \phi,\\
 		\mathrm{C}' &= \frac{\frac{1+\sqrt{5}}{2} - 4}{2} - \frac{1+\sqrt{5}}{2}.
@@ -465,33 +465,36 @@ $\forall \mu(n, p)$ There exists:
 \end{theorem}
 
 \begin{theorem}
-	Let the following equation for $n \in \mathbb{R}.$:
+	Let the following equation for $\forall n \in \mathbb{R}.$
 	\begin{align*}
 		2(\sqrt{2} + 1) + \frac{\frac{n - 1}{2} - 4}{2}  &\leq \frac{n - 1}{2} + n - 1,\\
 		2(\sqrt{2} + 1) + \frac{\frac{n - 1}{2} - 4}{2} - \frac{n - 1}{2} &\leq n - 1,\\
-		2(\sqrt{2} + 1) + \frac{\frac{n - 1}{2} - 4}{2} &\leq 0.
+	\end{align*}
+	 That admits the following solution of $(2(\sqrt{2} + 1) + \frac{\frac{n - 1}{2} - 4}{2}) \in \mathbb{R}.$:
+	\begin{align*}
+	 	2(\sqrt{2} + 1) + \frac{\frac{n - 1}{2} - 4}{2} &\leq 0.
 	\end{align*}
 \end{theorem}
 
 \begin{theorem}
-	Let the following equation for $n \in \mathbb{R}.$:
+	Let the following equation for $\forall n \in \mathbb{R}.$:
 	\begin{align*}
 		2(\sqrt{2} + 1) + \frac{\frac{n - 1}{2} - 4}{2} &= x,
 	\end{align*}
-	Solve for $n=5.$:
+	Thus for $n=5.$:
 	\begin{align*}
 		2(\sqrt{2} + 1) + \frac{5}{2} &= x,\\
 		\sqrt{2}+2 + \frac{5}{2} &= x.
 	\end{align*}
-	And. We optionally expand the following:
+	And optionally expand the following for $x \in \mathbb{R}.$:
 	\begin{align*}
 		2+\frac{5}{2} &= \frac{x}{\sqrt{2}},\\
-		&= \frac{x}{\sqrt{2}}.
+		x &= \frac{x}{\sqrt{2}}.
 	\end{align*}
 \end{theorem}
 
 \begin{theorem}
-	Let the following function for $x \in \mathbb{R}.$:
+	Let the following derivative, and primitive function for $\forall x \in \mathbb{R}.$:
 	\begin{align*}
 		f'(x)&= \frac{\ln (x)^{\mathrm{e}}}{\mathrm{e}} \cdot \mathrm{e}^{x},\\
 		f(x) &= \int_{0}^{1} f'(x)dx,\\
@@ -500,15 +503,15 @@ $\forall \mu(n, p)$ There exists:
 \end{theorem}
 
 \begin{theorem}
-	Let the following equation for $x \in \mathbb{R}.$:
+	Let the following equation for $\forall x \in \mathbb{R}.$:
 	\begin{align*}
 		x &= 2(\sqrt{2} + 1) + \frac{5}{2}.
 	\end{align*}
-	Thus for $x$:
+	Thus for $\forall x$:
 	\begin{align*}
 		\int_{0}^{1} \frac{\ln (x)^{\mathrm{e}}}{\mathrm{e}} \cdot \mathrm{e}^{x} dx.
 	\end{align*}
-	The following definite integral admits a solution $\mathrm{R}$.
+	Then there exists the following definite integral admits a solution $\mathrm{R} \in \mathbb{R}.$
 	\begin{align*}
 		\mathrm{R} &= \int_{0}^{1} \frac{\ln (x)^{\mathrm{e}}}{\mathrm{e}} \cdot \mathrm{e}^{x} dx,\\
 		&= \int_{0}^{1} \frac{\ln (2(\sqrt{2} + 1) + \frac{5}{2})^{\mathrm{e}}}{\mathrm{e}} \cdot \mathrm{e}^{2(\sqrt{2} + 1) + \frac{5}{2}},\\
@@ -517,15 +520,15 @@ $\forall \mu(n, p)$ There exists:
 \end{theorem}
 
 \begin{theorem}
-	Let the following definite integral for $x, y, \pm D \in \mathbb{R}.$:
+	Let the following definite integral for $\forall x, y, \pm D \in \mathbb{R}.$:
 	\begin{align*}
 		\int_{C}^{\pi} \frac{ \ln |x| \cdot f(y)f'(x) }{x^{n}y!} dx &= \pm D, \quad \pm D \neq 0.
 	\end{align*}
-	The following integrals admits a solution of:
+	With a definite integral that admits a solution of:
 	\begin{align*}
 		\int_{C}^{\pi} \frac{ \ln |x| \cdot f(y)f'(x) }{x^{n}y!} dx &= [\frac{ \ln |x| \cdot f(y)f'(x) }{x^{n}y!}]_{C}^{\pi} + D.
 	\end{align*}
-	Let us impose two inequalities:
+	Let us impose two inequalities in $\mathbb{R}.$:
 	\begin{align*}
 		\frac{\pi}{\frac{ \ln |x| \cdot f(y)f'(x) }{x^{n}y!}} < \frac{ \ln |x| \cdot f(y)f'(x) }{x^{n}y!} < \sum_{n=1}^{\infty} \frac{ \ln |x| \cdot f(y)f'(x) }{x^{n}y!},\\
 	\frac{\pi}{\ln |x| \cdot f(y)f'(x) } < \ln |x| \cdot f(y)f'(x)  < \sum_{n=1}^{\infty} \ln |x| \cdot f(y)f'(x).
@@ -533,19 +536,19 @@ $\forall \mu(n, p)$ There exists:
 \end{theorem}
 
 \begin{theorem}
-	Let the following equation for $x, y, n, C \in \mathbb{R}.$:
+	Let the following equation for $\forall x, y, n, C \in \mathbb{R}.$:
 	\begin{align*}
 		\pm \frac{\gamma(x-y)}{|x - y|^{n}}! &= \pm \frac{\sum_{n=1}^{p}(\frac{\gamma(x-y)}{1})}{\sum_{n=1}^{p}(|x - y|^{n})} + C, \quad x \neq y, \quad y \neq 0, \quad x \neq 0.
 	\end{align*}
 \end{theorem}
 
-\begin{theorem}
+\begin{definition}
 	Let the DFT be:
 	\begin{align*}
 		\sum_{m=0}^{n-1} x_{m}\mathrm{e}^{-i2\pi km /n}, \quad k = 0,\dots,n-1.
 	\end{align*}
 	For $x_{0}, \dots, x_{n-1}$ be complex numbers. Where $\mathrm{e}^{-i2\pi /n}$ is a primitive nth root of 1.
-\end{theorem}
+\end{definition}
 
 \begin{theorem}
 	Let the following identities for $\mathbb{R}.$:
@@ -553,11 +556,11 @@ $\forall \mu(n, p)$ There exists:
 		\frac{ln(\pi^\mathrm{e})!}{\pi} &= (\mathrm{e} \log(\pi))!,\\
 		\frac{ln(\pi^\mathrm{e})!}{\pi} &= \frac{(\mathrm{e} \log(\pi))!}{\pi}.
 	\end{align*}
-	We then would establish another identity $x \in \mathbb{R}.$:
+	We then would establish another identity $\forall x \in \mathbb{R}.$:
 	\begin{align*}
 		x &= -\frac{(\log(\pi)!) (e \log(\pi))!}{\pi}, \quad x \neq 0.
 	\end{align*}
-	From the following for $x = \frac{ln(\pi^\mathrm{e})!}{\pi}, \quad x \in \mathbb{R}.$:
+	From the following for $x = \frac{ln(\pi^\mathrm{e})!}{\pi}, \quad \forall x \in \mathbb{R}.$:
 	\begin{align*}
 		\frac{ln(\pi^\mathrm{e})!}{\pi} &= \frac{(\mathrm{e} \log(\pi))!}{\pi}.
 	\end{align*}
