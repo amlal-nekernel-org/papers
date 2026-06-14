@@ -18,4 +18,4 @@ Additional content includes:
 * https://github.com/amlel-el-mahrouss/talks
 * https://github.com/open-cpp-libraries/src
 
-##### Copyright (C) Amlal El Mahrouss 2025-2026, All rights Reserved. Licensed under the [https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/)
+##### Copyright (C) Amlal El Mahrouss 2025-2026, All rights Reserved. Licensed under the Apache License 2.0, see LICENSE.
