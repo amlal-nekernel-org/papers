@@ -2,12 +2,13 @@
 
 ## Contents:
 
-Repository is organized in the following:
+The repository is currently organized as stated below:
 
 * On Glossary.
 * On Proofs.
 * On Theorems.
-* A Short Reference on Linear Algebra.
+* An In-Between Proof Before Algebraic Concepts.
+* On Algebra.
 * On Distributed Systems.
 * On Plots.
 
@@ -16,7 +17,7 @@ Repository is organized in the following:
 * https://github.com/amlal-nekernel-org/talks
 * https://github.com/open-cpp-libraries/src
 
-## Notes:
+## Citing:
 
 When using the work, please cite it using what's inside the CITATION.cff.
 
